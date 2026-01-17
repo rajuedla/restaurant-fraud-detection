@@ -18,6 +18,11 @@ https://uk9w8ve1ea.execute-api.us-east-1.amazonaws.com/dev
 
 ## API Demo (Live & Working)
 
+**Base URL (dev environment):**  
+https://uk9w8ve1ea.execute-api.us-east-1.amazonaws.com/dev
+
+---
+
 ### 1️⃣ Submit an Order
 
 ```bash
@@ -26,18 +31,17 @@ API="https://uk9w8ve1ea.execute-api.us-east-1.amazonaws.com/dev"
 curl -s -X POST "$API/orders" \
   -H "Content-Type: application/json" \
   -d '{
-    "order_id":"o-2002",
+    "order_id":"o-3003",
     "restaurant_id":"r-01",
     "amount":49.99,
     "card_hash":"card-low"
   }'
 ```
-
 **Response**
 ```json
 {
   "message": "Order received",
-  "order_id": "o-2002"
+  "order_id": "o-3003"
 }
 ```
 
